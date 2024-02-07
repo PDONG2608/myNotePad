@@ -21,12 +21,12 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.akshatbhuhagal.mynotes"
-        minSdk = 16
+        applicationId = "com.hung.notesimple"
+        minSdk = 20
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
-
+        versionCode = 4
+        versionName = "1.0.4"
+        multiDexEnabled = true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -41,11 +41,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_16
+        targetCompatibility = JavaVersion.VERSION_16
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "16"
     }
     packaging {
         resources {
@@ -100,5 +100,9 @@ dependencies {
         exclude(group = "com.android.support", module = "support-annotations")
     })
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
+
+    implementation("com.android.billingclient:billing:6.1.0")
+    implementation("com.android.billingclient:billing-ktx:6.1.0")
+    implementation("com.github.akshaaatt:Google-IAP:1.6.0")
 
 }

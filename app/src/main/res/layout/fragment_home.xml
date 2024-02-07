@@ -38,7 +38,7 @@
                     android:gravity="center_horizontal"
                     android:text="@string/notes"
                     android:textAlignment="center"
-                    android:textColor="@color/white"
+                    android:textColor="@color/teal_200"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
@@ -50,6 +50,7 @@
                     android:fontFamily="@font/manropebold"
                     android:gravity="center_horizontal"
                     android:text="@string/tasks"
+                    android:visibility="gone"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="30sp"
@@ -66,6 +67,7 @@
                 android:layout_marginBottom="@dimen/_15sdp"
                 android:background="@drawable/searchview_background"
                 android:focusable="false"
+                android:visibility="gone"
                 android:theme="@style/SearchTheme"
                 app:closeIcon="@drawable/close_note"
                 app:iconifiedByDefault="false"
@@ -86,7 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_20sdp"
             android:contentDescription="@string/bottom_bar"
-            android:src="@drawable/add_note"
+            android:src="@drawable/add_icon"
             android:tint="@color/white"
             app:backgroundTint="#3e434e"
             app:layout_constraintBottom_toBottomOf="parent"
